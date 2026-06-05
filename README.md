@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NAPA International France — Déjà près de 30 ans à vos côtés</title>
-
+ 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   :root {
     --bg:    #080828;
     --bg-2:  #0d0d35;
@@ -19,7 +19,7 @@
     --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     --sans:  'Inter', 'Helvetica Neue', Arial, sans-serif;
   }
-
+ 
   html, body {
     width: 100%; height: 100%;
     background: var(--bg);
@@ -27,14 +27,14 @@
     font-family: var(--serif);
     overflow: hidden;
   }
-
+ 
   /* ============== DECK SHELL ============== */
   .deck {
     position: fixed;
     inset: 0;
     background: var(--bg);
   }
-
+ 
   .slide {
     position: absolute;
     inset: 0;
@@ -59,7 +59,7 @@
     transition: opacity 0.6s ease, transform 0.6s ease, visibility 0s linear 0s;
     z-index: 2;
   }
-
+ 
   /* progress bar */
   .progress {
     position: fixed;
@@ -75,7 +75,7 @@
     width: 0%;
     transition: width 0.5s cubic-bezier(.22,.61,.36,1);
   }
-
+ 
   /* slide number */
   .counter {
     position: fixed;
@@ -90,7 +90,7 @@
     font-variant-numeric: tabular-nums;
   }
   .counter .now { color: var(--white); font-weight: 600; }
-
+ 
   /* nav hint */
   .nav-hint {
     position: fixed;
@@ -105,7 +105,7 @@
     text-transform: uppercase;
     pointer-events: none;
   }
-
+ 
   /* brand mark */
   .brandmark {
     position: fixed;
@@ -120,7 +120,7 @@
     font-weight: 700;
   }
   .brandmark .dot { color: var(--red); margin: 0 4px; }
-
+ 
   /* utility ============ */
   .eyebrow {
     font-family: var(--sans);
@@ -137,7 +137,7 @@
   }
   .rule.center { margin: 0 auto; }
   .rule.thin { height: 1px; }
-
+ 
   /* ============== SLIDE 1 — HERO ============== */
   .s-hero {
     text-align: center;
@@ -208,7 +208,7 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .slide.active .word { opacity: 1; transform: translateY(0); }
-
+ 
   /* ============== SLIDE 2 — STATS ============== */
   .s-stats {
     background: var(--bg-2);
@@ -257,7 +257,7 @@
     text-transform: uppercase;
     font-weight: 500;
   }
-
+ 
   /* ============== SLIDE 3 — 1998 ============== */
   .s-1998 {
     justify-content: center;
@@ -312,7 +312,7 @@
   .s-1998 .body .rule {
     margin: 28px 0;
   }
-
+ 
   /* ============== SLIDE 4 — QUOTE ============== */
   .s-quote {
     text-align: center;
@@ -356,7 +356,7 @@
     text-transform: uppercase;
     font-weight: 500;
   }
-
+ 
   /* ============== SLIDE 5 — TIMELINE ============== */
   .s-timeline { background: var(--bg-2); align-items: stretch; padding: 4vh 6vw 4vh; }
   .s-timeline .head { text-align: center; margin-bottom: 2vh; }
@@ -399,7 +399,7 @@
   /* 2020s'–Today takes the whole second row */
   .tl-step[data-step="4"] { grid-column: 1 / span 4; padding: 0 24px; }
   .tl-step[data-step="4"] .desc { font-size: 14px; }
-
+ 
   .tl-step {
     position: relative;
     padding: 0 14px;
@@ -466,7 +466,7 @@
     width: 6px; height: 1px;
     background: var(--red);
   }
-
+ 
   /* ——— Merged 2020s'–Today step layout ——— */
   .tl-merged-body {
     display: grid;
@@ -499,7 +499,7 @@
     letter-spacing: 0.06em;
     text-align: center;
   }
-
+ 
   /* ============== SLIDE 6 — DNA/TCO ============== */
   .s-dna {
     background: var(--bg-2);
@@ -549,7 +549,7 @@
     font-size: inherit;
     font-family: inherit;
   }
-
+ 
   /* ============== SLIDE 7 — CLOSING ============== */
   .s-closing {
     text-align: center;
@@ -613,7 +613,7 @@
     color: var(--red);
     transform: translateY(-2px);
   }
-
+ 
   /* ============== RESPONSIVE ============== */
   @media (max-width: 900px) {
     .slide { padding: 7vh 6vw; }
@@ -629,7 +629,7 @@
     .tl-merged-body .col-divider .transition-word { writing-mode: horizontal-tb; transform: none; }
     .s-1998-inner { margin-left: 0; }
   }
-
+ 
   /* ============== RESPONSIVE — phones (<= 700px) ============== */
   @media (max-width: 700px) {
     html, body { overflow: hidden; }
@@ -639,7 +639,7 @@
       padding: 64px 5vw 56px;
       justify-content: flex-start;
     }
-
+ 
     .s-hero-bg30,
     .s-1998-watermark,
     .s-closing-bg30 {
@@ -650,34 +650,34 @@
       font-size: clamp(220px, 70vw, 360px) !important;
       top: 14%;
     }
-
+ 
     .brandmark { top: 14px; left: 16px; font-size: 8.5px; letter-spacing: 0.32em; }
     .counter   { bottom: 14px; right: 16px; font-size: 9px; letter-spacing: 0.3em; }
     .nav-hint  { display: none; }
     .progress  { height: 2px; }
-
+ 
     .s-hero { padding-top: 80px; }
     .s-hero h1 { font-size: 38px; line-height: 1.08; margin-bottom: 28px; }
     .s-hero .eyebrow { font-size: 11px; letter-spacing: 0.34em; margin-bottom: 24px; }
     .s-hero .sub { font-size: 14px; line-height: 1.7; margin-top: 28px; }
-
+ 
     .s-stats .head { margin-bottom: 32px; }
     .s-stats h2 { font-size: 28px; margin-top: 14px; }
     .stat-card { padding: 28px 10px; }
     .stat-card .stat-num { font-size: 56px; margin-bottom: 8px; }
     .stat-card .stat-label { font-size: 10px; letter-spacing: 0.28em; }
-
+ 
     .s-1998 { padding: 70px 6vw 56px; }
     .s-1998-inner { width: 100%; }
     .s-1998 .eyebrow { font-size: 11px; letter-spacing: 0.32em; margin-bottom: 18px; }
     .s-1998 h2 { font-size: 30px; line-height: 1.12; margin-bottom: 22px; }
     .s-1998 .body { font-size: 13px; line-height: 1.75; }
     .s-1998 .body .rule { margin: 20px 0; }
-
+ 
     .s-quote q { font-size: 24px; line-height: 1.34; }
     .s-quote .rule { margin: 32px auto; }
     .s-quote .attr { font-size: 11px; letter-spacing: 0.32em; }
-
+ 
     .s-timeline { padding: 70px 5vw 56px; }
     .s-timeline .head { margin-bottom: 14px; }
     .s-timeline h2 { font-size: 22px; }
@@ -690,13 +690,13 @@
     .tl-step[data-step="4"] .desc { font-size: 13px; text-align: left; }
     .tl-merged-body { gap: 14px; }
     .tl-merged-body .col-divider .divider-line { width: 40px; }
-
+ 
     .s-closing .eyebrow { margin-bottom: 24px; font-size: 11px; letter-spacing: 0.34em; }
     .s-closing h2 { font-size: 36px; line-height: 1.1; margin-bottom: 28px; }
     .s-closing .body { font-size: 14px; line-height: 1.7; margin-bottom: 36px; }
     .s-closing .cta { font-size: 11px; letter-spacing: 0.3em; padding: 16px 32px; }
   }
-
+ 
   /* ============== RESPONSIVE — small phones (<= 420px) ============== */
   @media (max-width: 420px) {
     .s-hero h1 { font-size: 32px; }
@@ -710,14 +710,14 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="brandmark">N<span class="dot">·</span>A<span class="dot">·</span>P<span class="dot">·</span>A &nbsp;International France</div>
 <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
 <div class="counter"><span class="now" id="counterNow">01</span> &nbsp;/&nbsp; <span id="counterTotal">07</span></div>
 <div class="nav-hint">Défilement automatique · cliquez pour avancer</div>
-
+ 
 <div class="deck" id="deck">
-
+ 
   <!-- ============== SLIDE 1 — HERO ============== -->
   <section class="slide s-hero" data-slide="1">
     <div class="s-hero-grid"></div>
@@ -729,7 +729,7 @@
       <p class="sub" data-words="">Quand les fournisseurs historiques ont tourné la page, nous sommes entrés en scène. Une histoire de partenariat, d'engagement, pour des lignes de production toujours en activité.</p>
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 2 — STATS ============== -->
   <section class="slide s-stats" data-slide="2">
     <div class="head">
@@ -754,7 +754,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 3 — 1998 ============== -->
   <section class="slide s-1998" data-slide="3">
     <div class="s-1998-watermark">1998</div>
@@ -770,7 +770,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 4 — QUOTE ============== -->
   <section class="slide s-quote" data-slide="4">
     <div class="s-quote-mark">"</div>
@@ -781,7 +781,7 @@
       <p class="attr">NAPA INTERNATIONAL FRANCE · DEPUIS 1998</p>
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 5 — TIMELINE ============== -->
   <section class="slide s-timeline" data-slide="5" data-step-mode="true">
     <div class="head">
@@ -790,15 +790,15 @@
       <p class="hint" id="tlHint">Cliquez pour dérouler — <span id="tlCounter">0 / 5</span></p>
     </div>
     <div class="timeline-track" id="timelineTrack">
-
+ 
       <!-- Step 0: 1998 -->
       <div class="tl-step" data-step="0">
         <div class="dot"></div>
         <div class="yr">1998</div>
         <div class="ttl">Création de NAPA International France</div>
-        <div class="desc">D'anciens cadres de TI® et Siemens® créent NAPA avec une conviction : devenir LE partenaire des utilisateurs d'automates TI505® et SIMATIC® 505 en apportant compétence, loyauté et présence sur la durée.</div>
+        <div class="desc">D'anciens cadres de TI® et Siemens® créent NAPA avec une conviction : devenir LE partenaire de référence des utilisateurs d'automates TI505® et SIMATIC® 505 en apportant compétence, loyauté et présence sur la durée.</div>
       </div>
-
+ 
       <!-- Step 1: Early 2000s' -->
       <div class="tl-step" data-step="1">
         <div class="dot"></div>
@@ -806,7 +806,7 @@
         <div class="ttl">Alliances stratégiques : CTI &amp; FasTrak</div>
         <div class="desc">Partenariats avec Control Technology Inc. et FasTrak SoftWorks afin de constituer un écosystème complet — matériels et logiciels entièrement compatibles avec le parc installé TI505® et SIMATIC® 505.</div>
       </div>
-
+ 
       <!-- Step 2: 2000s'–2010s' -->
       <div class="tl-step" data-step="2">
         <div class="dot"></div>
@@ -814,15 +814,15 @@
         <div class="ttl">Cinq continents, un seul engagement</div>
         <div class="desc">Un réseau de distribution international se déploie sur les Amériques, l'Europe, l'Asie, le Moyen-Orient, l'Afrique et l'Océanie — apportant l'expertise NAPA partout où vos usines opèrent.</div>
       </div>
-
+ 
       <!-- Step 3: 2010s'–2020s' -->
       <div class="tl-step" data-step="3">
         <div class="dot"></div>
         <div class="yr">Années 2010 – 2020</div>
-        <div class="ttl">Modernisation sans rupture de la production</div>
-        <div class="desc">La plateforme CTI 2500 Series® ouvre la voie : compatibilité totale avec les I/O et les câblages existants, compatibilité totale avec notre nouvelle gamme de CPU, migration en quelques minutes seulement — la production ne s'interrompt pas.</div>
+        <div class="ttl">Modernisation sans interruption de la production</div>
+        <div class="desc">La plateforme CTI 2500 Series® ouvre la voie : compatibilité totale avec les I/O et les câblages existants, compatibilité totale avec notre nouvelle gamme de CPU, migration en quelques minutes seulement — la production ne s'interrompt jamais.</div>
       </div>
-
+ 
       <!-- Step 4: 2020s'–Today — JANUS bullets only -->
       <div class="tl-step" data-step="4" style="text-align:center;">
         <div class="dot" style="margin-top:20px;"></div>
@@ -836,22 +836,22 @@
           </ul>
         </div>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 6 — DNA / TCO ============== -->
   <section class="slide s-dna" data-slide="6">
     <div class="s-dna-inner">
       <p class="eyebrow">Et comme depuis le premier jour —</p>
       <ul class="dna-list">
-        <li>Fidèles à nos valeurs fondatrices, c'est VOUS qui décidez du rythme de VOTRE évolution. Nous vous proposons des trajectoires et des options de migration — mais nous ne dictons jamais le moment pour migrer d'une plateforme à une autre pour VOTRE usine.</li>
+        <li>Fidèles à nos valeurs fondatrices, c'est VOUS qui décidez du rythme de VOTRE évolution. Nous vous proposons des trajectoires et des options de migration — mais nous n'imposerons jamais le moment pour migrer d'une plateforme à une autre pour VOTRE usine.</li>
         <li>Contrairement à beaucoup d'acteurs de notre secteur, nous ne rendons pas régulièrement nos plateformes existantes obsolètes, pour vous pousser à adopter nos derniers développements.</li>
         <li>C'est notre vision du <strong>COÛT TOTAL DE POSSESSION</strong> (TOTAL COST OF OWNERSHIP), que nous portons depuis 3 décennies, pour contribuer à la maîtrise de vos productions et de vos coûts.</li>
       </ul>
     </div>
   </section>
-
+ 
   <!-- ============== SLIDE 7 — CLOSING ============== -->
   <section class="slide s-closing" data-slide="7">
     <div class="s-closing-bg30">30</div>
@@ -862,9 +862,9 @@
       <a href="https://www.napa.fr/fr/" target="_blank" class="cta">VISITER NOTRE SITE NAPA INTERNATIONAL</a>
     </div>
   </section>
-
+ 
 </div>
-
+ 
 <script>
   /* ===== split text into word spans for word-by-word fade ===== */
   document.querySelectorAll('[data-words]').forEach((el) => {
@@ -894,16 +894,16 @@
       w.style.transitionDelay = (0.06 * i + 0.2) + 's';
     });
   });
-
+ 
   /* ===== deck nav ===== */
   const slides = Array.from(document.querySelectorAll('.slide'));
   const total = slides.length;
   document.getElementById('counterTotal').textContent = String(total).padStart(2, '0');
   let current = 0;
   const stepState = {};
-
+ 
   function fmt(n) { return String(n).padStart(2, '0'); }
-
+ 
   function activate(idx) {
     slides.forEach((s, i) => {
       s.classList.toggle('active', i === idx);
@@ -911,7 +911,7 @@
     document.getElementById('counterNow').textContent = fmt(idx + 1);
     const pct = ((idx + 1) / total) * 100;
     document.getElementById('progressFill').style.width = pct + '%';
-
+ 
     const slide = slides[idx];
     if (slide.classList.contains('s-stats')) runCounters(slide);
     if (slide.dataset.stepMode === 'true') {
@@ -920,7 +920,7 @@
       updateTimelineCounter(slide, 0);
     }
   }
-
+ 
   function next() {
     const slide = slides[current];
     if (slide && slide.dataset.stepMode === 'true') {
@@ -938,7 +938,7 @@
       activate(current);
     }
   }
-
+ 
   function prev() {
     const slide = slides[current];
     if (slide && slide.dataset.stepMode === 'true') {
@@ -956,13 +956,13 @@
       activate(current);
     }
   }
-
+ 
   function updateTimelineCounter(slide, n) {
     const total = slide.querySelectorAll('.tl-step').length;
     const el = slide.querySelector('#tlCounter');
     if (el) el.textContent = n + ' / ' + total;
   }
-
+ 
   /* counters */
   function runCounters(slide) {
     slide.querySelectorAll('[data-count]').forEach(el => {
@@ -982,7 +982,7 @@
       requestAnimationFrame(tick);
     });
   }
-
+ 
   /* events */
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
@@ -995,14 +995,14 @@
       current = total - 1; activate(current);
     }
   });
-
+ 
   document.getElementById('deck').addEventListener('click', (e) => {
     if (e.target.closest('a, button')) return;
     next();
   });
-
+ 
   activate(0);
-
+ 
   /* ============== AUTOPLAY ============== */
   const SLIDE_DURATIONS = [
     9000,
@@ -1016,7 +1016,7 @@
   const STEP_MS           = 10000;
   const TIMELINE_FINAL_MS = 15000;
   let autoTimer = null;
-
+ 
   const _origActivate = activate;
   activate = function(idx) {
     _origActivate(idx);
@@ -1030,15 +1030,15 @@
       }
     }
   };
-
+ 
   function autoTick() {
     const slide = slides[current];
     const isStepMode = slide && slide.dataset.stepMode === 'true';
-
+ 
     if (isStepMode) {
       const steps = slide.querySelectorAll('.tl-step');
       const shown = stepState[current] || 0;
-
+ 
       if (shown < steps.length) {
         autoTimer = setTimeout(() => {
           const n = stepState[current] || 0;
@@ -1068,24 +1068,28 @@
       }, dur);
     }
   }
-
+ 
   function scheduleAuto() {
     clearTimeout(autoTimer);
     autoTick();
   }
-
+ 
   document.addEventListener('keydown', (e) => {
     if (['ArrowRight','ArrowLeft',' ','PageDown','PageUp','Home','End'].indexOf(e.key) !== -1) {
       scheduleAuto();
     }
   });
   document.getElementById('deck').addEventListener('click', () => scheduleAuto());
-
+ 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) { clearTimeout(autoTimer); }
     else { scheduleAuto(); }
   });
-
+ 
+  scheduleAuto();
+</script>
+ 
+</body></html>
   scheduleAuto();
 </script>
 
